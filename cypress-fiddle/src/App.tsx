@@ -1,8 +1,14 @@
 import React from 'react';
+type Props = {
 
-function App() {
+}
+export const App: React.FC<Props> = ()  => {
+  const x = [1,2,3];
   return (
-    <div className="App">
+    <div>
+      <ul>
+      {x.map((i) => <li>{i}</li>)}
+      </ul>
     </div>
   );
 }
